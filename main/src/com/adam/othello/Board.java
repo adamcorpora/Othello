@@ -4,69 +4,87 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Board {
-    int tile;
-    ArrayList<String> options = new ArrayList<String>();
+    int jeff = 1;
     List<List<String>> outer = new ArrayList<List<String>>();
     List<String> inner1 = new ArrayList<String>();
     List<String> inner2 = new ArrayList<String>();
     List<String> inner3 = new ArrayList<String>();
 
 
-
     public Board (){
-        options.add("X");
-        options.add("bus");
+        System.out.println("_|0|1|2|3|4|5");
         inner1.add("_|");
-        inner1.add("X|");
-        inner1.add("O|");
+        inner1.add("_|");
+        inner1.add("_|");
+        inner1.add("_|");
+        inner1.add("_|");
+        inner1.add("_|");
 
-        //outer.get(0).add(300);
-    }
+        inner2.add("_|");
+        inner2.add("_|");
+        inner2.add("_|");
+        inner2.add("_|");
+        inner2.add("_|");
+        inner2.add("_|");
+
+        inner3.add("_|");
+        inner3.add("_|");
+        inner3.add("_|");
+        inner3.add("_|");
+        inner3.add("_|");
+        inner3.add("_|");
+        inner3.add("_|");
+
+        outer.add(inner1);
+        outer.add(inner2);
+        outer.add(inner3);
+        }
 
     public int check () {
-        System.out.println("_|0|1|2|3|4|5");
         System.out.print("0|");
+        if (jeff == 4) {
+            inner1.set(0,"O|");
+        }
+        else if (jeff == 3){
+            inner1.set(0,"X|");
+        }
         System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.println(inner1.get(0));
-        System.out.print("1|");
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.println(inner1.get(0));
-        System.out.print("2|");
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
+        if (jeff == 4) {
+            inner1.set(1,"O|");
+        }
+        else if (jeff == 3){
+            inner1.set(1,"X|");
+        }
         System.out.print(inner1.get(1));
+        if (jeff == 4) {
+            inner1.set(2,"O|");
+        }
+        else if (jeff == 3){
+            inner1.set(2,"X|");
+        }
         System.out.print(inner1.get(2));
-        System.out.print(inner1.get(0));
-        System.out.println(inner1.get(0));
-        System.out.print("3|");
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(2));
-        System.out.print(inner1.get(1));
-        System.out.print(inner1.get(0));
-        System.out.println(inner1.get(0));
-        System.out.print("4|");
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.println(inner1.get(0));
-        System.out.print("5|");
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.print(inner1.get(0));
-        System.out.println(inner1.get(0));
+        if (jeff == 4) {
+            inner1.set(3,"O|");
+        }
+        else if (jeff == 3){
+            inner1.set(3,"X|");
+        }
+        System.out.print(inner1.get(3));
+        if (jeff == 4) {
+            inner1.set(4,"O|");
+        }
+        else if (jeff == 3){
+            inner1.set(4,"X|");
+        }
+        System.out.print(inner1.get(4));
+        if (jeff == 4) {
+            inner1.set(5,"O|");
+        }
+        else if (jeff == 3){
+            inner1.set(5,"X|");
+        }
+        System.out.println(inner1.get(5));
+
         return 0;
     }
 }
