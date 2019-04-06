@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Board {
-    int jeff = 1;
+    public int jeff = 1;
     List<List<String>> outer = new ArrayList<List<String>>();
     List<String> inner1 = new ArrayList<String>();
     List<String> inner2 = new ArrayList<String>();
@@ -42,46 +42,46 @@ public class Board {
 
     public int check () {
         System.out.print("0|");
-        if (jeff == 4) {
-            inner1.set(0,"O|");
-        }
-        else if (jeff == 3){
+        if (Question.input == 0) {
             inner1.set(0,"X|");
         }
-        System.out.print(inner1.get(0));
-        if (jeff == 4) {
-            inner1.set(1,"O|");
+        else {
+            inner1.set(0,"_|");
         }
-        else if (jeff == 3){
+        System.out.print(inner1.get(0));
+        if (Question.input == 1) {
             inner1.set(1,"X|");
         }
-        System.out.print(inner1.get(1));
-        if (jeff == 4) {
-            inner1.set(2,"O|");
+        else {
+            inner1.set(1,"_|");
         }
-        else if (jeff == 3){
+        System.out.print(inner1.get(1));
+        if (Question.input == 2) {
             inner1.set(2,"X|");
         }
-        System.out.print(inner1.get(2));
-        if (jeff == 4) {
-            inner1.set(3,"O|");
+        else {
+            inner1.set(2,"_|");
         }
-        else if (jeff == 3){
+        System.out.print(inner1.get(2));
+        if (Question.input == 3) {
             inner1.set(3,"X|");
         }
-        System.out.print(inner1.get(3));
-        if (jeff == 4) {
-            inner1.set(4,"O|");
+        else {
+            inner1.set(3,"_|");
         }
-        else if (jeff == 3){
+        System.out.print(inner1.get(3));
+        if (Question.input == 4) {
             inner1.set(4,"X|");
         }
-        System.out.print(inner1.get(4));
-        if (jeff == 4) {
-            inner1.set(5,"O|");
+        else {
+            inner1.set(4,"_|");
         }
-        else if (jeff == 3){
+        System.out.print(inner1.get(4));
+        if (Question.input == 5) {
             inner1.set(5,"X|");
+        }
+        else {
+            inner1.set(5,"_|");
         }
         System.out.println(inner1.get(5));
 
